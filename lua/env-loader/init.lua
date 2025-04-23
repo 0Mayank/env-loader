@@ -12,7 +12,7 @@ function M.check_and_load_nvimrc()
 		return
 	end
 
-	local nvimrc_path = current_dir .. "/.nvimrc"
+	local nvimrc_path = current_dir .. "/.nvimrc.lua"
 
 	-- Check if .nvimrc exists in the current directory
 	if vim.fn.filereadable(nvimrc_path) == 1 then
